@@ -16,6 +16,8 @@ cp -n apiconfig.py userapiconfig.py
 cp -n config.json user-config.json
 cp -n mysql.json usermysql.json
 
+echo "安装依赖"
+apt-get install python-minimal python3
 
 echo "启动程序"
 cd shadowsocks/
