@@ -1,4 +1,4 @@
-# jiaoben
+# 脚本文件
 ===========
 
 # Install ssr
