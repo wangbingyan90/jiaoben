@@ -6,7 +6,7 @@
 CentOS:
 
 	yum -y install git
-	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x ssr.sh && ./ssr.sh
+	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x ssr.sh && chmod +x start.sh && ./ssr.sh 
 	
 	
 JDK:
