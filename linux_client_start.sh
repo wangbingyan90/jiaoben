@@ -5,4 +5,4 @@ export PATH
 
 echo "启动程序"
 
-python /root/ssr/shadowsocks/local.py -c /root/ssr/config.json -d start 
+python /root/jiaoben/ssr/shadowsocks/local.py -c /root/jiaoben/ssr/config.json -d start 
