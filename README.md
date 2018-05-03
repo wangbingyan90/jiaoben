@@ -6,7 +6,7 @@
 CentOS:
 
 	yum -y install git
-	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x ssr.sh && chmod +x start.sh && ./ssr.sh 
+	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x install_ssr.sh && ./ install_ssr.sh
 	
 		
 Debian / Ubuntu:
@@ -21,3 +21,7 @@ Debian / Ubuntu:
 	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x jdk.sh && ./jdk.sh
 
 
+# Use ssr
+
+	启动命令 vps或 vps -start
+	关闭命令 vps -s 或 vps -stop
