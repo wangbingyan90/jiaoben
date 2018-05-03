@@ -3,6 +3,11 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
+cp -n vps /usr/local/bin
+cp -n cvps /usr/local/bin
+chmod +x cvps
+chmod +x vps
+
 cd
 
 echo "下载程序"
@@ -17,8 +22,3 @@ chmod +x shadowsocks/*.sh
 cp -n apiconfig.py userapiconfig.py
 cp -n config.json user-config.json
 cp -n mysql.json usermysql.json
-
-cp -n vps /usr/local/bin
-cp -n cvps /usr/local/bin
-chmod +x cvps
-chmod +x vps
