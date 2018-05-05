@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+if [ -z "$1" ]; then 
+echo "启动程序"
+cd /root/apache-tomcat-9.0.7/bin
+./startup.sh
+fi
+
+if [ "$1" = "-start" ]; then 
+echo "启动程序"
+cd /root/apache-tomcat-9.0.7/bin
+./startup.sh
+fi
+
+if [ "$1" = "-stop" ]; then 
+echo "结束程序"
+cd /root/apache-tomcat-9.0.7/bin
+./shutdown.sh
+fi
+
+if [ "$1" = "-s" ]; then 
+echo "结束程序"
+cd /root/apache-tomcat-9.0.7/bin
+./shutdown.sh
+fi
