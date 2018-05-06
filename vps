@@ -5,24 +5,24 @@ export PATH
 
 if [ -z "$1" ]; then 
 echo "启动程序"
-cd /root/ssr/shadowsocks/
-python server.py -d start
+cd /ssr/shadowsocks/
+sudo python server.py -d start
 fi
 
 if [ "$1" = "-start" ]; then 
 echo "启动程序"
-cd /root/ssr/shadowsocks/
-python server.py -d start
+cd /ssr/shadowsocks/
+sudo python server.py -d start
 fi
 
 if [ "$1" = "-stop" ]; then 
 echo "结束程序"
-cd /root/ssr/shadowsocks/
-python server.py -d stop
+cd /ssr/shadowsocks/
+sudo python server.py -d stop
 fi
 
 if [ "$1" = "-s" ]; then 
 echo "结束程序"
-cd /root/ssr/shadowsocks/
-python server.py -d stop
+cd /ssr/shadowsocks/
+sudo python server.py -d stop
 fi

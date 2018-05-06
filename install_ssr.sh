@@ -8,7 +8,7 @@ cp -n cvps /usr/local/bin
 chmod +x cvps
 chmod +x vps
 
-cd
+cd /
 
 echo "下载程序"
 git clone https://github.com/wangbingyan90/ssr.git

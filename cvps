@@ -4,18 +4,18 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 if [ -z "$1" ]; then 
-python /root/ssr/shadowsocks/local.py -c /root/ssr/config.json -d start 
+sudo python /ssr/shadowsocks/local.py -c /ssr/config.json -d start 
 fi
 
 if [ "$1" = "-start" ]; then 
-python /root/ssr/shadowsocks/local.py -c /root/ssr/config.json -d start 
+sudo python /ssr/shadowsocks/local.py -c /ssr/config.json -d start 
 fi
 
 if [ "$1" = "-stop" ]; then 
-python /root/ssr/shadowsocks/local.py -c /root/ssr/config.json -d stop 
+sudo python /ssr/shadowsocks/local.py -c /ssr/config.json -d stop 
 fi
 
 if [ "$1" = "-s" ]; then 
-python /root/ssr/shadowsocks/local.py -c /root/ssr/config.json -d stop 
+sudo python /ssr/shadowsocks/local.py -c /ssr/config.json -d stop 
 fi
 
