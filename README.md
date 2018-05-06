@@ -21,6 +21,11 @@ Debian / Ubuntu:
 	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x jdk.sh && ./jdk.sh
 
 
+# Install redis:
+	
+	chmod +x install_redis.sh
+	sudo bash install_redis.sh
+
 # Use ssr
 
 	启动命令 vps或 vps -start

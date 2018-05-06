@@ -7,7 +7,7 @@ echo "安装wget"
 yum -y install wget
 
 echo "下载git2.17"
-cd /usr/local/src
+cd /usr/local/src/
 wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.17.0.tar.gz
 
 echo "安装依赖库"
