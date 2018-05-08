@@ -5,14 +5,14 @@
 
 CentOS:
 
-	yum -y install git
-	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x install_ssr.sh && ./ install_ssr.sh
+	sudo yum -y install git
+	git clone https://github.com/wangbingyan90/shell_script.git && cd shell_script/ssr && chmod +x install_ssr.sh && sudo bash install_ssr.sh
 	
 		
 Debian / Ubuntu:
 
-	apt-get -y update && apt-get  -y install git
-	git clone https://github.com/wangbingyan90/jiaoben.git && cd jiaoben && chmod +x ssr_ubuntu.sh && ./ssr_ubuntu.sh
+	sudo apt-get -y install git
+	git clone https://github.com/wangbingyan90/shell_script.git && cd shell_script/ssr && chmod +x install_ssr.sh && sudo bash install_ssr.sh
 
 
 # Install JDK:
@@ -27,6 +27,15 @@ Debian / Ubuntu:
 	sudo bash install_redis.sh
 
 # Use ssr
+### start service (service config: /ssr/user-config.json)
 
 	启动命令 vps或 vps -start
 	关闭命令 vps -s 或 vps -stop
+
+### start client(client config: /ssr/config.json)
+	启动命令 cvps或 cvps -start
+	关闭命令 cvps -s 或 cvps -stop
+
+
+	python /usr/local/shadowcd socks/server.py -c /etc/shadowsocks.json
+ -d start
