@@ -1,7 +1,11 @@
 git config --global user.name "wby"
 git config --global user.email 1418885488@qq.com
 ssh-keygen -t rsa -C "1418885488@qq.com"
-vim /home/linx/.ssh/id_rsa.pub
+
+
+
+
+vim $home/linx/.ssh/id_rsa.pub
 
 
 ssh git@github.com
