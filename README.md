@@ -1,6 +1,18 @@
 # 脚本文件
 ===========
 
+# 常见问题
+1，配置过程问题(./configure)
+	
+	-bash: ./configure: No such file or directory
+	解决方式
+	Ubuntu：apt install autoconf
+	Centso: yum install autoconf
+	
+2,编译问题(make)
+
+	Ubuntu：apt install build-essential  
+	Centso: yum install gcc	
 # Install ssr
 
 CentOS:

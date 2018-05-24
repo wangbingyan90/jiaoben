@@ -12,9 +12,6 @@ tar -zxf redis-4.0.9.tar.gz
 
 cd redis-4.0.9/
 
-echo "-----------配置----------"
-./configure
-
 echo "-----------编译----------"
 make
 
