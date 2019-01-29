@@ -1,0 +1,2 @@
+sudo apt update 只检查，不更新
+sudo apt upgrade 更新已安装的软件包
