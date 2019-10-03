@@ -15,6 +15,9 @@ tar vzfx Python-3.6.5.tgz
 
 cd Python-3.6.5
 
+echo "安装gcc"
+yum -y install gcc-c++
+
 echo "配置"
 ./configure
 
